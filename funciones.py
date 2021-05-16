@@ -30,5 +30,6 @@ def suma(a, b):
     return resultado 
 
 sumatoria = suma(1, 9)
-print(sumatoria)
+print("1 + 9")
+print("Es igual a " + str(sumatoria))
 
