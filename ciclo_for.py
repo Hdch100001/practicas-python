@@ -6,12 +6,22 @@
 
 # contador = 1
 # print(contador)
-# while contador < 1000:
+# while contador < 100:
 #     contador += 1
 #     print(contador)
 
 # for contador in range(1001):
 #     print(contador)
 
-for i in range(10):
+# a = range(1001)
+# print(a)
+
+# a = list(range(1001))
+# print(a)
+
+for i in range(11):
     print(11 * i)
+
+
+# for i in range(1001):
+#     print(i)
