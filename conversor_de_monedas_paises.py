@@ -4,10 +4,10 @@ def conversor (tipo_pesos, valor_dolar):
     dolares = pesos / valor_dolar 
     dolares = round(dolares, 2)
     dolares = str(dolares)
-    print ("Tienes $" + dolares + "dólares")
+    print ("Tienes $ " + dolares + " dólares")
 
 menu = """
-Bienvenido al conversor de monedas 💰
+Bienvenido al conversor de monedas 💰 
 
 1 - Pesos colombianos  
 2 - Pesos argentinos

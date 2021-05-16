@@ -1,7 +1,8 @@
-def suma(a, b):
-    print("Se suman dos números")
-    resultado = a + b 
-    return resultado 
+def imprimir_mensaje():
+    print('Mensaje especial: ')
+    print('!Estoy aprendiendo a usar funciones')
 
-sumatoria = suma(1, 6)
-print(sumatoria)
+
+imprimir_mensaje()
+imprimir_mensaje()
+imprimir_mensaje()
