@@ -4,7 +4,7 @@ def run():
 
     super_list = [
         {"firstname": "Facundo", "lastname": "Calderón"},
-        {"firstname": "Maria", "lastname": "Zeledón"},
+        {"firstname": "Maria", "lastname": "Mendez"},
         {"firstname": "Federico", "lastname": "García"},
         {"firstname": "Fernando", "lastname": "Loría"},
         {"firstname": "Marcial", "lastname": "Méndez"},
