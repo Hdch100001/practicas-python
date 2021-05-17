@@ -3,7 +3,7 @@ def run():
     my_dict = {"firstname": "Facundo", "last": "García"}
 
     super_list = [
-        {"firstname": "Facundo", "lastname": "García"},
+        {"firstname": "Facundo", "lastname": "Calderón"},
         {"firstname": "Maria", "lastname": "Zeledón"},
         {"firstname": "Federico", "lastname": "García"},
         {"firstname": "Fernando", "lastname": "Loría"},
