@@ -12,7 +12,7 @@ def run():
     #     if i % 9 == 0:
     #         my_dict[i] = i**(1/2)
 
-    my_dict = {i: i**(1/2) for i in range(1,1001) if i % 9 ==0}
+    my_dict = {i: round(i**(1/2), 2) for i in range(1,1001) if i % 9 ==0}
     
     print(my_dict)
 
