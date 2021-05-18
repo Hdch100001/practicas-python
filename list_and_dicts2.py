@@ -34,7 +34,7 @@ def run():
     #     print(i.items())
 
     for i in super_list:
-        print(i['firstname'],i['lastname'])
+        print(i['firstname']," ",i['lastname'])
 
 
 
