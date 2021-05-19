@@ -10,21 +10,35 @@
 
 
 
-def palindrome(word):
-    word = word.lower()
-    word = word.strip()
-    return word == word[::-1]
+
+# def palindrome(word):
+#        return word == word[::-1]
+       
+
+# def run():
+#     word = input("Escribe una palabra: ")
+
+#     word = word.lower()
+#     word = word.strip() 
+
+#     if palindrome(word): 
+#         print("Es palindromo")
+#     else:
+#         print("No es palindromo")
 
 
 def run():
-    word = input("Escribe una palabra: ")
-    
 
-    if palindrome(word): 
+    word = input("Escribe una palabra: ")
+    word = word.lower() 
+    word = word.strip()
+           
+    palindrome = lambda word: word == word[::-1]
+        
+    if palindrome(word):
         print("Es palindromo")
     else:
-        print("No es palindromo")
-        
+        print("No es plindromo")
 
 
 
