@@ -43,19 +43,13 @@
 
 def run():
 
-    # word = input("Escribe una palabra: ")
-    # word = word.replace(" ", "")
-    # word = word.lower() 
-    # word = word.strip() 
+    word = input("Escribe una palabra: ")
+    word = word.replace(" ", "")
+    word = word.lower() 
+    word = word.strip() 
 
-    word_list = [ana, luz azul, python, hayen, teclado amarillo, maria, botella, calle, oso, ojo, seres, solos, bob]
+    palindrome = lambda word: word == word[::-1]
 
-    palindrome = [i.replace() for i in word_list]
-    palindrome = [i.lower() for i in word_list]
-    palindrome = [i.strip() for i in word_list]
-
-    palindrome = list(filter(lambda word: word == word[::-1], )
-        
     if palindrome(word):
         print("Es palindromo")
     else:
