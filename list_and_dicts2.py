@@ -30,11 +30,15 @@ def run():
     #     for key, values in i.items():
     #         print(key, ": ",values)
 
+    super_list2 = [print(i for i in super_list)]
+
+    print(super_list2)
+
     # for i in super_list:
     #     print(i.items())
 
-    for i in super_list:
-        print(i['firstname']," ",i['lastname'])
+    # for i in super_list:
+    #     print(i['firstname'],i['lastname'])
 
 
 
