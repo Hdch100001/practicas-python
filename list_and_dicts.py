@@ -1,4 +1,4 @@
-# MENSAJE:
+# Clase 8:
 # Se puede crear listas dentro de diccionarios y viceversa diccionarios dentro de listas
 # Los diccionarios dentro de listas pueden ir dentro de dos corchetes que identifican la lista, y las llaves de los diccionarios 
 # para dentro de esas llaves identificar nuestra llave entre comillas y luego : para nuevamente entre comillas el valor de esa llave. 
@@ -9,18 +9,17 @@
 
 
 
-
 def run():
-    my_list = [1, "Hello", True, 4.5]
-    my_dict = {"firstname": "Facundo", "last": "García"}
+    # my_list = [1, "Hello", True, 4.5]
+    # my_dict = {"firstname": "Facundo", "last": "García"}
 
-    super_list = [
-        {"firstname": "Facundo", "lastname": "Calderón"},
-        {"firstname": "Maria", "lastname": "Zeledón"},
-        {"firstname": "Federico", "lastname": "García"},
-        {"firstname": "Fernando", "lastname": "Loría"},
-        {"firstname": "Marcial", "lastname": "Méndez"},
-    ]
+    # super_list = [
+    #     {"firstname": "Facundo", "lastname": "Calderón"},
+    #     {"firstname": "Maria", "lastname": "Zeledón"},
+    #     {"firstname": "Federico", "lastname": "García"},
+    #     {"firstname": "Fernando", "lastname": "Loría"},
+    #     {"firstname": "Marcial", "lastname": "Méndez"},
+    # ]
 
     super_dict = {
         "natural_nums": [1, 2, 3, 4, 5],
@@ -29,7 +28,9 @@ def run():
     }
 
     for key, value in super_dict.items():
-        print(key,"-", value)
+        print(key,"", value)
+
+    # super_dict2 = {print(key,":", value) for key, value in super_dict.items()}
 
 
 if __name__ == '__main__':
