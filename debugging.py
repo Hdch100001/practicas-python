@@ -1,5 +1,5 @@
 # Clase 15
-#     Debugging: errores de lógica
+#     Debugging: errores de lógica 
 
 
 def divisors(num):
@@ -10,10 +10,12 @@ def divisors(num):
     return divisors  
 
 def run():
-    num = int(input("Ingresa un número: "))
-    print(divisors(num))
-    print("Termino mi programa")
-
-
+    try:
+        num = int(input("Ingresa un número: "))
+        print(divisors(num))
+        print("Termino mi programa")
+    except ValueError:
+        print("Solo se permite ingresar números")
+        
 if __name__ == '__main__':
     run()
