@@ -7,24 +7,25 @@
 # nada y presiona enter, como soloucionarlo?
 
   
-def palindromo(strign):    
-    strign = strign.replace(" ", "")
-    strign = strign.strip()
-    strign = strign.lower()
-    strign2 = strign + " "
+def palindrome(strign): 
+    if strign == strign[::-1]:
+        return True
     
-        if strign == strign:
-            return strign == strign[::-1]
-        if strign != strign2:
-            raise TypeError("No se permiten espacios vacios")
+def run():
+    try:
+        strign = input("Ingrese una palabra: ")
+        strign = strign.replace(" ", "")
+        strign = strign.strip()
+        if len(strign) == 0:
+            raise TypeError("No se permiten ingresar espacios vacios")
+        strign = strign.lower()
+        assert strign.isalpha(), "No se permiten ingresar números"
+        if palindrome(strign):
+            print("Es palindromo")
+        else:
+            print("No es palindromo")    
     except TypeError as ty:
         print(ty)
-     
-def run():
-    strign = input("Ingrese una palabra: ")
-    if palindromo(strign):
-        print("Es palindromo")
-
 
 if __name__ == '__main__':
     run()
