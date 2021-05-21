@@ -6,24 +6,25 @@
 # no cumpla con nuestros objetivos, o bien no ingrese
 # nada y presiona enter, como soloucionarlo?
 
-
-def palindrome(string):
-    try:
-        if len(string) == 0:
-            raise ValueError("No se pueden ingresar cadenas vacías")
-        return string == string[::-1]
-    except ValueError as ve:
-        print(ve)
-        return False
+  
+def palindromo(strign):    
+    strign = strign.replace(" ", "")
+    strign = strign.strip()
+    strign = strign.lower()
+    strign2 = strign + " "
     
-
+        if strign == strign:
+            return strign == strign[::-1]
+        if strign != strign2:
+            raise TypeError("No se permiten espacios vacios")
+    except TypeError as ty:
+        print(ty)
+     
 def run():
-    string = input("Escribe una palabra: ")
-
-    if palindrome(string) == True:
+    strign = input("Ingrese una palabra: ")
+    if palindromo(strign):
         print("Es palindromo")
-    else:
-        print("No es palindromo")
+
 
 if __name__ == '__main__':
     run()

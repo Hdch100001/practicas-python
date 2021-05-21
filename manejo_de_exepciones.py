@@ -29,7 +29,7 @@ def divisors(num):
         return divisores
     except ValueError as ve:
         print(ve)
-        return False
+        
         
 
 def run():
